@@ -4,6 +4,19 @@
     <h2><%= first_name %>'s home</h2>
     <p><%= title %></p>
   </div>
-  <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/<%= username %>">
-  <a class="card-link" href="#" ></a>
+  <div class="card-rating">
+    <p>
+      <% flat_rating.times do %>
+        <i class="fa fa-star" style="color: #E0B035"></i>
+      <% end %>
+      <% (5 - flat_rating).times do %>
+      <i class="fa fa-star"></i>
+      <% end %>
+    </p>
+  </div>
+  <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{username}", class: "card-user" %>
+  <%= link_to "", "#", class: "card-link" %>
+
+
 </div>
+

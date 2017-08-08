@@ -3,13 +3,16 @@
   city: 'paris'
   country: 'france'
   room_title: 'Charming room in Montmartre'
+  rating: 4
 - name: 'Boris Paillard'
-  github_nickname: 'Papillard'
+  github_nickname: 'papillard'
   city: 'paris'
   country: 'france'
   room_title: 'Small flat in Tokyo'
+  rating: 2
 - name: 'Romain Whatever'
   github_nickname: 'Whatever'
   city: 'london'
   country: 'uk'
   room_title: 'Nice flat in Picadilly'
+  rating: 5

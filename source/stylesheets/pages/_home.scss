@@ -1,10 +1,4 @@
 #home {
-  background-color: $red;
-  color: white;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   text-align: center;
   p {
     margin-top: 1.5em;
@@ -14,4 +8,8 @@
     font-weight: bold;
     font-size: 16px;
   }
+  h3 {
+    color: $black
+  }
 }
+

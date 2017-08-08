@@ -6,10 +6,8 @@
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
-
     <%= link_to "About", "about", class: "navbar-wagon-item navbar-wagon-link" %>
-    <a href="/team.html" class="navbar-wagon-item navbar-wagon-link">Team</a>
-
+    <%= link_to "Team", "team", class: "navbar-wagon-item navbar-wagon-link" %>
 
     <!-- Profile picture with dropdown list -->
     <div class="navbar-wagon-item">
@@ -28,8 +26,8 @@
     <div class="dropdown">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/team.html">Team</a></li>
+        <li><%= link_to "About", "about", class: "navbar-wagon-item navbar-wagon-link" %></li>
+        <li><%= link_to "Team", "team", class: "navbar-wagon-item navbar-wagon-link" %></li>
       </ul>
     </div>
   </div>

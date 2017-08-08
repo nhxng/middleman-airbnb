@@ -14,21 +14,22 @@ title: Le Wagon - Middleman
   </div>
 </div> -->
 
+<div id="home">
+  <div class="home-content">
     <%= partial "components/banner" , locals: { header: "Welcome home", subtitle: "Book unique homes and experience a city like a local." } %>
 
     <div class="container">
+    <h3>Recent Flats</h3>
       <div class="row">
-
         <% data.users.each do |user| %>
           <div class="col-xs-12 col-sm-4">
-            <div class="card" style="background-image: url('https://kitt.lewagon.com/placeholder/cities/<%= user.city %>');">
-
-              <%= partial "components/card" , locals: { city_name_url: user.city, city_name: user.city.capitalize, country: user.country, first_name: user.name, title: user.room_title, username: user.github_nickname } %>
-
+            <div class="cards">
+              <%= partial "components/card" , locals: { city_name_url: user.city, city_name: user.city.capitalize, country: user.country, first_name: user.name, title: user.room_title, username: user.github_nickname, flat_rating: user.rating } %>
             </div>
           </div>
         <% end %>
       </div>
     </div>
-
+  </div>
+</div>
 
